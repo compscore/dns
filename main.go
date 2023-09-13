@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Run(ctx context.Context, target string, command string, expectedOutput string, username string, password string) (bool, string) {
+func Run(ctx context.Context, target string, command string, expectedOutput string, username string, password string, options map[string]interface{}) (bool, string) {
 	// Set up the custom resolver with the provided DNS server
 	deadline, ok := ctx.Deadline()
 	if !ok {
