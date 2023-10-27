@@ -30,7 +30,7 @@
 ## Examples
 
 ```yaml
-- name: google-dns
+- name: google.com-dns
   release:
     org: compscore
     repo: dns
